@@ -1,0 +1,38 @@
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  padding: 0;
+  margin: 0;
+  background-image: url('./assets/Header-images-1.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-position: fixed;
+  font-family: 'SanFrancisco', 'San Francisco', 'Helvetica Neue', 'Helvetica', 'Arial', 'Geneva', sans-serif;
+}
+
+#Logo {
+  max-width: 450px;
+  margin-bottom: 20px;
+  width: 90%;
+}
+
+h2 {
+  letter-spacing: -0.7px;
+  font-weight: 300;
+}
+
+$fadeStart: rgba(255,255,255,0.95);
+$fadeEnd: rgba(255,255,255,0.9);
+
+.content-wrapper {
+  display: flex;
+  width: 100vw;
+  text-align: center;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: -moz-linear-gradient(top,  $fadeStart 40%, $fadeEnd 100%);
+  background: -webkit-linear-gradient(top,  $fadeStart 40%, $fadeEnd 100%);
+  background: linear-gradient(to bottom,  $fadeStart 40%, $fadeEnd 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#a3ffffff',GradientType=0 );
+}

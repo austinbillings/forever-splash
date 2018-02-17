@@ -1,0 +1,23 @@
+{
+  "name": "forever-splash",
+  "version": "1.0.0",
+  "description": "Splash page for Forever Photo Booths",
+  "main": "index.html",
+  "repository": "https://github.com/austinbillings/forever-splash.git",
+  "author": "Austin B <me@austinbillings.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^6.2.1",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "trolley": "^0.4.6",
+    "zaq": "^1.4.1"
+  }
+}
