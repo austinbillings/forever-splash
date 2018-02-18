@@ -20,7 +20,10 @@ class ReservationForm extends FormController {
     return (
       <React.Fragment>
         <br />
-        <b>Please submit your deposit in the amount 249.99 using the PayPal button below in order to reserve a photo booth for your event.</b>
+        <br />
+        <b>Please submit your deposit in the amount of $249.99 using the PayPal button below in order to reserve a photo booth for your event.</b>
+
+        <br />
         <PaypalButton />
       </React.Fragment>
     );
