@@ -2,7 +2,7 @@ const prodMode = process.env.NODE_ENV === 'production';
 
 module.exports = {
   origin: prodMode
-    ? 'http://foreverphotobooths.us'
+    ? [ 'http://foreverphotobooths.us', 'http://www.foreverphotobooths.us' ],
     : 'http://localhost:1235',
   port: 4331,
   siteName: 'Forever Photo Booths',
