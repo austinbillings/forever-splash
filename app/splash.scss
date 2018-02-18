@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800');
+
+$orange: #fbb040;
+$red: #be1e2d;
+$fadeStart: rgba(255,255,255,0.95);
+$fadeEnd: rgba(255,255,255,0.9);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  padding: 0;
+  font-size: 16px;
+  margin: 0;
+  background-image: url('../assets/Header-images-1.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-position: fixed;
+  font-family: 'Muli', 'SanFrancisco', 'San Francisco', 'Helvetica Neue', 'Helvetica', 'Arial', 'Geneva', sans-serif;
+}
+
+.FormRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  align-items: flex-start;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+#Logo {
+  max-width: 450px;
+  width: 90%;
+}
+
+h2 {
+  letter-spacing: -0.7px;
+}
+
+.content-wrapper {
+  display: flex;
+  width: 100vw;
+  text-align: center;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: -moz-linear-gradient(top,  $fadeStart 40%, $fadeEnd 100%);
+  background: -webkit-linear-gradient(top,  $fadeStart 40%, $fadeEnd 100%);
+  background: linear-gradient(to bottom,  $fadeStart 40%, $fadeEnd 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#a3ffffff',GradientType=0 );
+}
+
+.content {
+  padding: 100px 0;
+  display: block;
+  width: 100%;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 7px 23px;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.4s;
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: black;
+  }
+}
+
+img.loader {
+  margin: 20px auto;
+}
+
+div.FormWrapper {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px 30px;
+  box-shadow: 0 0 10px rgba( 0, 0, 0, 0.1);
+  background-color: rgba(255,255,255,0.5);
+  margin: 20px auto;
+  border-bottom: 2px solid $red;
+  max-width: 450px;
+}
+
+form.FormBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 0;
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+  }
+
+  section {
+    flex: 1;
+    padding: 5px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  input {
+    padding: 5px;
+    border-radius: 2px;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.4s;
+    &:focus {
+      box-shadow: 0 0 10px fade-out($orange, 0.5);
+    }
+  }
+  label {
+    font-size: 0.6em;
+    font-weight: 600;
+    margin: 3px;
+    text-transform: uppercase;
+  }
+}

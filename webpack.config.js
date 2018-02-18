@@ -23,7 +23,7 @@ if (prodMode) {
 }
 
 module.exports = {
-	entry: __dirname + '/app.js',
+	entry: __dirname + '/app/app.jsx',
 	devtool: 'source-map',
 	output: {
 		path: path.join(__dirname, 'dist'),

@@ -15,9 +15,11 @@ function loadService (serviceName) {
 };
 
 const QuoteService = loadService('Quote');
+const ReservationService = loadService('Reservation');
 
 app.disable('x-powered-by');
 app.use(cors(corsOptions));
 app.use('/quote', QuoteService.mount());
+app.use('/reservation', ReservationService.mount());
 app.listen(port);
 zaq.win(`Services listening on port: ${port}`);
